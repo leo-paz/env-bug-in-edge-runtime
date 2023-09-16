@@ -2,7 +2,7 @@ import { ENV } from '@/lib/env'
 
 export const runtime = 'edge'
 
-export async function POST (req: Request) {
+export async function GET (req: Request) {
   console.log(ENV.KV_URL)
 
   return new Response('Hello world!', {
